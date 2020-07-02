@@ -5,8 +5,6 @@
     <script src="https://kit.fontawesome.com/cb5488eec8.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <hi>Listings Carousel Proxy</hi>
-    <!-- <div id="app"></div> -->
     <div id="gallery"></div><br>
     <div id="mapModule"></div><br>
     <div id="listingsNear"></div>
@@ -14,6 +12,7 @@
     <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
   <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
     <!-- Load our React component. -->
+  <script src="http://127.0.0.1:8001/bundle.js"></script>
   <script>
     var urlParams = new URLSearchParams(window.location.search);
     var myId = urlParams.get('id');
@@ -22,10 +21,8 @@
     scriptElement.src = srcUrl;
     document.body.appendChild(scriptElement)
   </script>
-  <script src="http://127.0.0.1:8001/bundle.js"></script>
-  <!-- <script src="http://127.0.0.1:8002/bundle.js"></script> -->
-  <script src="http://127.0.0.1:8003/bundle.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAEDftK3M7DZUGZwMQoYHNEK7Tn4jM3YLc"> </script>
-  </body>
+  <script src="http://127.0.0.1:8003/bundle.js"></script>
+</body>
 </html>
 
